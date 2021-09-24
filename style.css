@@ -1,0 +1,29 @@
+body{
+    margin: 0rem 5rem 5rem 5rem;
+    color: white;
+    
+}
+nav{
+   text-align: center; 
+   background-color: blue;
+   padding: 1rem;
+   margin-bottom: 0rem;
+}
+main{
+    text-align: center;
+    padding: 0rem 5rem;
+    background-color: blue;
+    margin-top: 0rem;   
+}
+input{
+    display: block;
+    margin:0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+button{
+    width : 5rem;
+    height : 2rem;
+    margin:0.5rem;
+    margin-bottom: 5rem;
+}
