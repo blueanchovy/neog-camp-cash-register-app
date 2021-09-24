@@ -11,7 +11,7 @@ chkBtn.addEventListener("click", () => {
     // console.log(cashAmt.value, billAmt.value);
 
     if(billAmt.value > 0){
-        if(cashAmt.value >= billAmt.value)//>= operator works opposite for some reason
+        if(cashAmt.value >= billAmt.value)
         {
             // console.log(cashAmt.value <= billAmt.value);
             // msgArea.innerText = "ok";
