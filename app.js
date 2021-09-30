@@ -4,7 +4,7 @@ const chkBtn = document.querySelector("#chk-btn");
 const msgArea = document.querySelector("#msg-area");
 const noOfNotes = document.querySelectorAll(".no-of-notes");//for selecting all elements of same class
 
-const availableNotes = [2000, 500, 100, 50, 20, 10, 5];
+const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
 
 chkBtn.addEventListener('click', () => {
 
