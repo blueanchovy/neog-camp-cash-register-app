@@ -18,7 +18,7 @@ chkBtn.addEventListener('click', () => {
         {
             console.log("bill: " + totalBill + " cash: " + cashGiven + " bill>=cash: " + (totalBill <= cashGiven));
             const amountToBeReturned = (cashGiven-totalBill);
-            msgArea.innerText = "Change to be returned is:- ";
+            msgArea.innerText = "Change to be returned is:- " + amountToBeReturned;
             calculateChange(amountToBeReturned);
         }
         else
