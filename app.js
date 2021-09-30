@@ -13,7 +13,7 @@ chkBtn.addEventListener('click', () => {
     const totalBill = Number(billAmt.value);
     const cashGiven = Number(cashAmt.value);
 
-    if(totalBill > 0){
+    if(totalBill > 0 && cashGiven > 0){
         if(totalBill <= cashGiven)
         {
             // console.log("bill: " + totalBill + " cash: " + cashGiven + " bill>=cash: " + (totalBill <= cashGiven));
@@ -28,7 +28,7 @@ chkBtn.addEventListener('click', () => {
         }
     }
     else{
-        msgArea.innerText = "Please enter the correct bill amount";
+        msgArea.innerText = "Please enter the correct amounts";
     }
 });
 
