@@ -10,8 +10,8 @@ chkBtn.addEventListener('click', () => {
 
     // console.log(cashAmt.value, billAmt.value);
 
-    const totalBill = billAmt.value;
-    const cashGiven = cashAmt.value;
+    const totalBill = Number(billAmt.value);
+    const cashGiven = Number(cashAmt.value);
 
     if(totalBill > 0){
         if(totalBill <= cashGiven)
