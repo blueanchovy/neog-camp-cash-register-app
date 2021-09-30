@@ -6,16 +6,19 @@ const noOfNotes = document.querySelectorAll(".no-of-notes");//for selecting all 
 
 const availableNotes = [2000, 500, 100, 50, 20, 10, 5];
 
-chkBtn.addEventListener("click", () => {
+chkBtn.addEventListener('click', () => {
 
     // console.log(cashAmt.value, billAmt.value);
 
-    if(billAmt.value > 0){
-        if(cashAmt.value >= billAmt.value)
+    const totalBill = billAmt.value;
+    const cashGiven = cashAmt.value;
+
+    if(totalBill > 0){
+        if(totalBill <= cashGiven)
         {
-            // console.log(cashAmt.value <= billAmt.value);
-            // msgArea.innerText = "ok";
-            const amountToBeReturned = cashAmt.value - billAmt.value;
+            console.log("bill: " + totalBill + " cash: " + cashGiven + " bill>=cash: " + (totalBill <= cashGiven));
+            const amountToBeReturned = -(totalBill - cashGiven);
+            msgArea.innerText = "Change to be returned is:- ";
             calculateChange(amountToBeReturned);
         }
         else
@@ -32,7 +35,7 @@ chkBtn.addEventListener("click", () => {
 function calculateChange(amountToBeReturned){
     for (let i = 0; i < availableNotes.length ; i++){
         const numberOfNotes = Math.trunc(amountToBeReturned / availableNotes[i]);
-        amountToBeReturned %= availableNotes[i];
+        amountToBeReturned = amountToBeReturned % availableNotes[i];
         noOfNotes[i].innerText = numberOfNotes;
     }
 }

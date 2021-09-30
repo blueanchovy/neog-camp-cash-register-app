@@ -1,7 +1,7 @@
 body{
     margin: 0rem 2rem;
     color: white;
-    
+    min-width: 110vw;
 }
 nav{
    text-align: center; 
@@ -13,7 +13,7 @@ nav{
     text-align: center;
     padding: 0rem 2rem;
     background-color: blue;
-    margin-top: 0rem;  
+    margin: 4rem auto 7rem;
     width: auto;
 }
 input{
@@ -29,14 +29,23 @@ button{
     margin-bottom: 5rem;
 }
 
-table{
-    border: 1px solid white;
+.change-table {
+    width: 50%;
+    text-align: justify;
+    border-collapse: collapse;
+    margin: auto;
 }
 
-tr{
-    border: 1px solid white;    
+.change-table caption {
+    margin: 1rem auto;
+    font-size: x-large;
+    font-weight: 500;
 }
 
-td{
-    border: 1px solid white;    
+th,
+td {
+  border: 2px solid var(--primary-color);
+  width: 0%;
+  border-collapse: collapse;
+  padding: 0.4rem;
 }
