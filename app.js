@@ -1,10 +1,17 @@
 const billAmt = document.querySelector("#bill-amt");
 const cashAmt = document.querySelector("#cash-amt");
+const cashAmtArea = document.querySelector("#cash-amt-area");
 const chkBtn = document.querySelector("#chk-btn");
 const msgArea = document.querySelector("#msg-area");
 const noOfNotes = document.querySelectorAll(".no-of-notes");//for selecting all elements of same class
+const psa = document.querySelector("#psa");
 
 const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
+
+billAmt.addEventListener('input', () => {
+    cashAmtArea.style.display = "block";
+    psa.style.display = "none";
+});
 
 chkBtn.addEventListener('click', () => {
 

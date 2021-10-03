@@ -53,3 +53,11 @@ td {
   border-collapse: collapse;
   padding: 0.4rem;
 }
+ 
+#cash-amt-area{
+    display: none;
+}
+
+#psa{
+    display : block;
+}
